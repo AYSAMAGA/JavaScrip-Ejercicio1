@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    let numeroDeElementos = 10; /*Este es la variable que el profe puede cambiar*/ 
+
+    function fibonacci(numeroDeElementos) {
+        let serie = [0, 1];
+
+        for (let i = 2; i < numeroDeElementos; i++) {
+            let nuevoElemento = serie[i - 1] + serie[i - 2];
+            serie.push(nuevoElemento);
+        }
+     return serie;
+    } 
+    
+    console.log("Serie de Fibonacci para numeroDeElementos =", numeroDeElementos);
+    console.log(fibonacci(numeroDeElementos));
+
+</script>
+
+</body>
+</html>
